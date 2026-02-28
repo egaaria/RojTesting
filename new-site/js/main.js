@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initScrollReveal();
   initLightbox();
+  initHeroParallax();
 
   // Page-specific initializations
   const page = document.body.dataset.page;
@@ -28,6 +29,8 @@ function initLoader() {
       // Trigger hero animation
       const heroBg = document.querySelector('.hero-bg img');
       if (heroBg) heroBg.style.transform = 'scale(1)';
+      // Trigger typing reveal after loader
+      initTypingReveal();
     }, 400);
   });
 }
@@ -92,6 +95,74 @@ function initScrollReveal() {
   });
 
   reveals.forEach(el => observer.observe(el));
+}
+
+/* ====== Hero Parallax Effect ====== */
+function initHeroParallax() {
+  const heroBg = document.querySelector('.hero-bg');
+  const hero = document.querySelector('.hero');
+  if (!heroBg || !hero) return;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const heroBottom = hero.offsetTop + hero.offsetHeight;
+    // Only apply parallax while hero is in viewport
+    if (scrollY < heroBottom) {
+      heroBg.style.transform = `translateY(${scrollY * 0.4}px)`;
+    }
+  }, { passive: true });
+}
+
+/* ====== Typing / Text Reveal on Hero Title ====== */
+function initTypingReveal() {
+  const heroTitle = document.querySelector('.hero-title');
+  if (!heroTitle) return;
+
+  // Process each child node (text nodes and elements like <span>)
+  const children = Array.from(heroTitle.childNodes);
+  heroTitle.innerHTML = '';
+  let charIndex = 0;
+  const baseDelay = 0.5; // Start after loader (seconds)
+  const charDelay = 0.035; // Delay between each character
+
+  children.forEach(node => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      // Split text into individual characters
+      const text = node.textContent;
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        if (char === ' ' || char === '\n' || char === '\r') {
+          // Preserve whitespace without animation
+          heroTitle.appendChild(document.createTextNode(char));
+        } else {
+          const span = document.createElement('span');
+          span.className = 'char';
+          span.textContent = char;
+          span.style.animationDelay = `${baseDelay + charIndex * charDelay}s`;
+          heroTitle.appendChild(span);
+          charIndex++;
+        }
+      }
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      // Clone the element (e.g., <span class="highlight">)
+      const clone = node.cloneNode(false);
+      const text = node.textContent;
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        if (char === ' ') {
+          clone.appendChild(document.createTextNode(' '));
+        } else {
+          const span = document.createElement('span');
+          span.className = 'char';
+          span.textContent = char;
+          span.style.animationDelay = `${baseDelay + charIndex * charDelay}s`;
+          clone.appendChild(span);
+          charIndex++;
+        }
+      }
+      heroTitle.appendChild(clone);
+    }
+  });
 }
 
 /* ====== Lightbox ====== */
