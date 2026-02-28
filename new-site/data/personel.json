@@ -1,0 +1,114 @@
+[
+    {
+        "section": "Violin 1",
+        "members": [
+            {
+                "name": "Nama Personel 1",
+                "photo": "images/personel/DSC00036-768x512.jpg"
+            },
+            {
+                "name": "Nama Personel 2",
+                "photo": "images/personel/DSC00041-768x512.jpg"
+            },
+            {
+                "name": "Nama Personel 3",
+                "photo": "images/personel/DSC00055-1-683x1024.jpg"
+            }
+        ]
+    },
+    {
+        "section": "Violin 2",
+        "members": [
+            {
+                "name": "Nama Personel 4",
+                "photo": "images/personel/DSC00062-683x1024.jpg"
+            },
+            {
+                "name": "Nama Personel 5",
+                "photo": "images/personel/DSC00064-683x1024.jpg"
+            },
+            {
+                "name": "Nama Personel 6",
+                "photo": "images/personel/DSC00076-683x1024.jpg"
+            }
+        ]
+    },
+    {
+        "section": "Violin 3",
+        "members": [
+            {
+                "name": "Nama Personel 7",
+                "photo": "images/personel/DSC00091-683x1024.jpg"
+            },
+            {
+                "name": "Nama Personel 8",
+                "photo": "images/personel/agatha-768x512.jpg"
+            }
+        ]
+    },
+    {
+        "section": "Viola 1",
+        "members": [
+            {
+                "name": "Nama Personel 9",
+                "photo": "images/personel/aisha-new-768x512.jpg"
+            },
+            {
+                "name": "Nama Personel 10",
+                "photo": "images/personel/DSC00036-768x512.jpg"
+            }
+        ]
+    },
+    {
+        "section": "Viola 2",
+        "members": [
+            {
+                "name": "Nama Personel 11",
+                "photo": "images/personel/DSC00041-768x512.jpg"
+            },
+            {
+                "name": "Nama Personel 12",
+                "photo": "images/personel/DSC00055-1-683x1024.jpg"
+            }
+        ]
+    },
+    {
+        "section": "Cello",
+        "members": [
+            {
+                "name": "Nama Personel 13",
+                "photo": "images/personel/DSC00062-683x1024.jpg"
+            },
+            {
+                "name": "Nama Personel 14",
+                "photo": "images/personel/DSC00064-683x1024.jpg"
+            }
+        ]
+    },
+    {
+        "section": "Flute",
+        "members": [
+            {
+                "name": "Nama Personel 15",
+                "photo": "images/personel/DSC00076-683x1024.jpg"
+            },
+            {
+                "name": "Nama Personel 16",
+                "photo": "images/personel/DSC00091-683x1024.jpg"
+            }
+        ]
+    },
+    {
+        "section": "Percussion",
+        "members": [
+            {
+                "name": "Nama Personel 17",
+                "photo": "images/personel/agatha-768x512.jpg"
+            },
+            {
+                "name": "Nama Personel 18",
+                "photo": "images/personel/aisha-new-768x512.jpg"
+            }
+        ]
+    }
+]

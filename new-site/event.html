@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jejak Melodi — Semua konser dan acara yang diselenggarakan oleh Rumah Orkestra Jogja.">
+    <title>Event — Rumah Orkestra Jogja</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎻</text></svg>">
+</head>
+
+<body data-page="event">
+
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">🎻</div>
+                <div class="nav-logo-text">Rumah <span>Orkestra</span> Jogja</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="event.html" class="active">Event</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="community.html">Community</a>
+        <a href="event.html" class="active">Event</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="hero page-hero">
+        <div class="hero-bg">
+            <img src="images/hero/DSC02024-1536x1024.jpg" alt="Rumah Orkestra Jogja performance">
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow reveal">Our Events</p>
+            <h1 class="hero-title reveal reveal-delay-1">
+                Jejak
+                <span class="highlight">Melodi</span>
+            </h1>
+            <p class="hero-description reveal reveal-delay-2">
+                Setiap konser adalah cerita. Setiap nada adalah pesan. Jelajahi perjalanan musikal kami.
+            </p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-label reveal">Semua Event</div>
+            <h2 class="section-title reveal reveal-delay-1">Konser & Pertunjukan</h2>
+            <p class="section-subtitle reveal reveal-delay-2">Dari konser orkestra hingga resital musik kamar — setiap
+                event kami istimewa.</p>
+            <div class="events-grid" id="events-grid">
+                <!-- Populated by JS from events.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.06);">
+        <div class="container reveal">
+            <div class="section-label" style="justify-content: center;">Ingin Tampil?</div>
+            <h2 class="section-title" style="max-width: 600px; margin: 0 auto 16px;">Bergabung dengan Konser Berikutnya
+            </h2>
+            <p class="section-subtitle" style="margin: 0 auto 40px;">Hubungi kami untuk informasi lebih lanjut tentang
+                audisi dan partisipasi.</p>
+            <a href="about.html#contact" class="btn-outline">Hubungi Kami →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="footer-logo-icon">🎻</div>
+                    <span class="footer-text">© 2026 Rumah Orkestra Jogja. All rights reserved.</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/rumahorkestrajogja/" target="_blank"
+                        aria-label="Instagram">📷</a>
+                    <a href="https://www.youtube.com/@rumahorkestrajogja" target="_blank" aria-label="YouTube">▶</a>
+                    <a href="mailto:rumahorkestrajogja@gmail.com" aria-label="Email">✉</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">✕</button>
+        <img id="lightbox-img" src="" alt="Gallery image">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tim dan komunitas di balik Rumah Orkestra Jogja. Kenali orang-orang yang membuat musik orkestra hidup di Yogyakarta.">
+    <title>Community — Rumah Orkestra Jogja</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎻</text></svg>">
+</head>
+
+<body data-page="community">
+
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">🎻</div>
+                <div class="nav-logo-text">Rumah <span>Orkestra</span> Jogja</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="community.html" class="active">Community</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="community.html" class="active">Community</a>
+        <a href="event.html">Event</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="hero page-hero">
+        <div class="hero-bg">
+            <img src="images/hero/WhatsApp-Image-2025-10-13-at-21.49.41-1536x1023.jpeg"
+                alt="Rumah Orkestra Jogja community">
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow reveal">Our Community</p>
+            <h1 class="hero-title reveal reveal-delay-1">
+                Behind The
+                <span class="highlight">Spirit</span>
+            </h1>
+            <p class="hero-description reveal reveal-delay-2">
+                Orang-orang yang bekerja di balik layar untuk mengharumkan nama Jogja melalui musik orkestra.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section">
+        <div class="container">
+            <div class="section-label reveal">Tim Kami</div>
+            <h2 class="section-title reveal reveal-delay-1">Pengurus Komunitas</h2>
+            <p class="section-subtitle reveal reveal-delay-2">18 orang yang berdedikasi untuk menghidupkan musik
+                orkestra di Yogyakarta</p>
+            <div class="team-grid" id="team-grid">
+                <!-- Populated by JS from team.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Personel by Instrument -->
+    <section class="section personel-section">
+        <div class="container">
+            <div class="section-label reveal">Personel</div>
+            <h2 class="section-title reveal reveal-delay-1">Personel Rumah Orkestra Jogja</h2>
+            <p class="section-subtitle reveal reveal-delay-2">Anggota orkestra kami yang terbagi berdasarkan instrumen
+            </p>
+            <div id="personel-container">
+                <!-- Populated by JS from personel data -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number">80+</div>
+                    <div class="stat-label">Anggota Aktif</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-1">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">Tim Pengurus</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-2">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Konser Digelar</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-3">
+                    <div class="stat-number">2022</div>
+                    <div class="stat-label">Tahun Berdiri</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="footer-logo-icon">🎻</div>
+                    <span class="footer-text">© 2026 Rumah Orkestra Jogja. All rights reserved.</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/rumahorkestrajogja/" target="_blank"
+                        aria-label="Instagram">📷</a>
+                    <a href="https://www.youtube.com/@rumahorkestrajogja" target="_blank" aria-label="YouTube">▶</a>
+                    <a href="mailto:rumahorkestrajogja@gmail.com" aria-label="Email">✉</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">✕</button>
+        <img id="lightbox-img" src="" alt="Gallery image">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

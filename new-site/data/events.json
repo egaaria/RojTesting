@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ghibli-2",
+    "title": "Saga from Our Childhood: Ghibli Chapter 2",
+    "description": "Melanjutkan perjalanan musikal kami melalui dunia Studio Ghibli, konser ini menghadirkan aransemen orkestra dari soundtrack-soundtrack legendaris yang telah menyentuh hati jutaan orang di seluruh dunia.",
+    "venue": "Yogyakarta",
+    "date": "2026",
+    "tags": ["Concert", "Ghibli", "Orchestral"],
+    "image": "images/events/WhatsApp-Image-2025-10-13-at-21.34.25-1-1024x682.jpeg",
+    "gallery": [
+      "images/events/WhatsApp-Image-2025-10-13-at-21.34.25-1024x682.jpeg",
+      "images/events/WhatsApp-Image-2025-10-13-at-21.34.26-1024x682.jpeg",
+      "images/events/WhatsApp-Image-2025-10-13-at-21.34.27-1024x682.jpeg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "one-piece",
+    "title": "Saga from Our Childhood: One Piece Romance Dawn",
+    "description": "Dengan tema persahabatan, ketekunan, dan keberanian, kisah One Piece menjadi kanvas yang kuat untuk interpretasi musikal. Konser ini digelar di Performance Hall Universitas Negeri Yogyakarta pada Agustus 2024, menghadirkan aransemen orkestra dari musik-musik ikoniknya yang dimainkan oleh para musisi muda.",
+    "venue": "Performance Hall Universitas Negeri Yogyakarta",
+    "date": "Agustus 2024",
+    "tags": ["Concert", "Anime", "Grand Concert"],
+    "image": "images/events/orkestra-scaled-1-1024x682.jpg",
+    "gallery": [
+      "images/events/DSC01425-1024x683.jpg",
+      "images/events/DSC01463-1024x683.jpg",
+      "images/events/DSC01522-1024x683.jpg",
+      "images/events/DSC01598-1024x683.jpg",
+      "images/events/DSC02024-1024x683.jpg",
+      "images/events/DSC02265-1024x683.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "resital-2",
+    "title": "Resital Musik Kamar #2",
+    "description": "Pertunjukan musik kamar intim yang menampilkan karya-karya klasik dalam format ensemble kecil, memberikan kesempatan bagi musisi muda untuk menampilkan keterampilan teknis dan ekspresi musikal mereka.",
+    "venue": "Yogyakarta",
+    "date": "2024",
+    "tags": ["Chamber Music", "Recital"],
+    "image": "images/events/DSC06277-Enhanced-NR-1024x683.jpg",
+    "gallery": [
+      "images/events/DSC06233-1024x683.jpg",
+      "images/events/DSC06277-Enhanced-NR-1024x683.jpg",
+      "images/events/DSC01135-1024x683.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "showchestra",
+    "title": "Showchestra",
+    "description": "Sebuah pertunjukan orkestra yang menggabungkan musik, visual, dan storytelling dalam satu panggung spektakuler. Showchestra hadir sebagai wujud kreativitas dan inovasi Rumah Orkestra Jogja dalam menyajikan musik klasik dengan cara yang segar dan modern.",
+    "venue": "Yogyakarta",
+    "date": "2024",
+    "tags": ["Show", "Visual Concert"],
+    "image": "images/events/DSC01238-683x1024.jpg",
+    "gallery": [
+      "images/events/DSC01238-1024x1536.jpg",
+      "images/events/DSC01244-1024x683.jpg",
+      "images/events/DSC01135-1024x683.jpg"
+    ],
+    "featured": false
+  }
+]
